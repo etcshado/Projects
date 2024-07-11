@@ -1,0 +1,68 @@
+
+#danielsonblog{
+    color: rgb(11, 82, 11);
+    font-size: large;
+    font-weight: bold;
+    border-radius: 2px;
+    margin: -10px;
+    margin-left: -70px;
+}
+
+body{
+    background-color: rgb(44, 43, 43);
+}
+#userInput{
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    background:rgb(44, 43, 43);
+    color: transparent;
+  text-shadow: 0 0 0 rgb(11, 82, 11);
+
+  &:focus {
+      outline: none;
+  }
+}
+#output{
+    color: rgb(11, 82, 11);
+    
+}
+
+#user{
+    display: flex;
+    padding: 5px;
+    color:rgb(11, 82, 11)
+
+}
+.blinking-dollar {
+    animation: blinker 1s infinite;
+}
+  
+@keyframes blinker {
+    from { opacity: 1.0; }
+    50% { opacity: 0; }
+    to { opacity: 1.0; }
+}
+
+.terminal{
+    bottom: 0;
+    left: 0;
+    display:flex
+
+}
+#static_text{
+    font-size: 25px;
+    text-shadow: 1px 1px 2px;
+    font-family: monospace;
+    color: rgb(31, 167, 31);
+    animation: typing 3s steps(characters, end) forwards;
+}
+@keyframes static_text {
+    from {
+      clip-path: "inset(0 0 100% 100%)";
+    }
+    to {
+      clip-path: "inset(0 0 0% 100%)";
+    }
+  }
